@@ -3,7 +3,7 @@ from flask import (Flask, render_template, request, redirect, session)
 app = Flask(__name__)
 app.secret_key = 'helloheyeveryonekeepthisassecert'
 
-user = {"username": "sarvi", "password": "@123"} #we will get the username and password of the the user from the html form and check if they match. If match is found, we will create a session which will have the information for the user.
+user = {"username": "...", "password": "..."} #we will get the username and password of the the user from the html form and check if they match. If match is found, we will create a session which will have the information for the user.
 
 
 ###########
