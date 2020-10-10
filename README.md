@@ -5,6 +5,9 @@
 <img src="https://img.icons8.com/plasticine/100/000000/cookie.png" alt="Cooies" width="40" height="40"/>
 </p> 
 
+## Demo
+https://login-flask.herokuapp.com/
+
 Created a Login using session in Python-Flask
 
 ## Prerequisite
@@ -17,15 +20,20 @@ Created a Login using session in Python-Flask
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
 
 ```bash
-pip install -U Flask
+pip install -U Flask 
+```
+or 
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
 
 ```
 🔹 Clone the Repo
-🔹 Install The Above #Installation
 🔹 Activate your venv
+🔹 Install The Above #Installation
 🔹 Move to http://127.0.0.1:5000/ 
 🔹🔹🔹🔹🔹🔹
 *NOTE: For login credentials create user in app.py*
