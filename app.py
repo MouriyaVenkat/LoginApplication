@@ -11,10 +11,16 @@ def login():
         username = request.form.get('username')
         password = request.form.get('password')     
         if username == user['username'] and password == user['password']:
-            
             session['user'] = username
             return redirect('/dashboard')
-
         return "<h1>Incorrect username or password</h1>"    #if the username or password does not matches 
-
     return render_template("login.html")
+
+
+@app.route('/dashboard')
+def dashboard():
+    if('user' in session and session['user'] == user['username']):
+        return '<h1>Welcome to the dashboard</h1>'
+    #here we are checking whether the user is logged in or not
+    return '<h1>Login first!!!</h1>'
+
