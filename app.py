@@ -5,7 +5,11 @@ app.secret_key = 'helloheyeveryonekeepthisassecert'
 
 user = {"username": "sarvi", "password": "@123"} #we will get the username and password of the the user from the html form and check if they match. If match is found, we will create a session which will have the information for the user.
 
-@app.route('/login', methods = ['POST', 'GET'])
+
+###########
+##LOGIN
+###########
+@app.route('/', methods = ['POST', 'GET'])
 def login():
     if(request.method == 'POST'):
         username = request.form.get('username')
@@ -17,6 +21,10 @@ def login():
     return render_template("login.html")
 
 
+
+###########
+##DASHBOARD
+###########
 @app.route('/dashboard')
 def dashboard():
     if('user' in session and session['user'] == user['username']):
@@ -24,11 +32,18 @@ def dashboard():
     #here we are checking whether the user is logged in or not
     return '<h1>Login first!!!</h1>'
 
+
+###########
+##LOGOUT
+###########
 @app.route('/logout')
 def logout():
     session.pop('user')   #help to remove the session from the browser
     return redirect('/login')
 
 
+###########
+##RUNAPP
+###########
 if __name__ == '__main__':
     app.run(debug=True)
