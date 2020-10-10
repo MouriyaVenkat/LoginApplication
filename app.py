@@ -24,3 +24,7 @@ def dashboard():
     #here we are checking whether the user is logged in or not
     return '<h1>Login first!!!</h1>'
 
+@app.route('/logout')
+def logout():
+    session.pop('user')   #help to remove the session from the browser
+    return redirect('/login')
