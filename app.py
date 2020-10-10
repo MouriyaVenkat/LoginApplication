@@ -28,3 +28,7 @@ def dashboard():
 def logout():
     session.pop('user')   #help to remove the session from the browser
     return redirect('/login')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
