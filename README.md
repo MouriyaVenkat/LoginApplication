@@ -5,6 +5,30 @@
 <img src="https://img.icons8.com/plasticine/100/000000/cookie.png" alt="Cooies" width="40" height="40"/>
 </p> 
 
+## Folder Structure
+```bash
+📦LoginPageFlaskWidSession
+┣ 📂static
+┃ ┣ 📂css
+┃ ┃ ┣ 📜bootstrap.min.css
+┃ ┃ ┣ 📜bootstrap.min.css.map
+┃ ┃ ┗ 📜style.css
+┃ ┣ 📂images
+┃ ┃ ┣ 📜login-bg.jpg
+┃ ┃ ┗ 📜login.gif
+┃ ┗ 📂js
+┃   ┣ 📜bootstrap.min.js
+┃   ┣ 📜bootstrap.min.js.map
+┃   ┗ 📜popper.min.js
+┣ 📂templates
+┃ ┗ 📜login.html
+┣ 📜.gitignore
+┣ 📜app.py
+┣ 📜Procfile
+┣ 📜README.md
+┗ 📜requirements.txt
+```
+
 ## Demo
 https://login-flask.herokuapp.com/
 
